@@ -31,6 +31,7 @@
     width: 90%;
     background-color: white;
     padding: 16px 4%;
+    box-sizing: border-box;
     border-radius: 15px;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
   }
@@ -47,6 +48,7 @@
   }
 
   &__control {
+    font-family: "ThaiSansNeue", sans-serif;
     display: block;
     width: 100%;
     padding: 14px 16px;
@@ -61,7 +63,7 @@
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-    &.LoginForm--invalid ~ .LoginForm--invalidFeedback {
+    &.LoginForm--invalid~.LoginForm--invalidFeedback {
       display: block;
     }
   }
