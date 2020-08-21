@@ -1,6 +1,10 @@
 {
     "name": "feyverly-app",
     "version": "1.0.0",
+    "author": {
+        "name": "Suphicha Anusirikul",
+        "email": "suphicha.anu@gmail.com"
+    },
     "repository": {
         "type": "git",
         "url": ""
