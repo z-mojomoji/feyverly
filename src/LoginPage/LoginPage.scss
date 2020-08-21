@@ -1,0 +1,102 @@
+::-webkit-input-placeholder {
+  font-family: "ThaiSansNeue", sans-serif;
+  color: #949494;
+}
+
+:-moz-placeholder {
+  font-family: "ThaiSansNeue", sans-serif;
+  color: #949494;
+}
+
+::-moz-placeholder {
+  font-family: "ThaiSansNeue", sans-serif;
+  color: #949494;
+}
+
+:-ms-input-placeholder {
+  font-family: "ThaiSansNeue", sans-serif;
+  color: #949494;
+}
+
+.LoginContainer {
+  position: relative;
+  height: 100vh;
+  background: #f0f1f6;
+
+
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: white;
+    padding: 16px 4%;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__logo {
+    margin: 14px auto 50px;
+    display: block;
+  }
+}
+
+.LoginForm {
+  &__group {
+    margin-bottom: 2px;
+  }
+
+  &__control {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    height: 50px;
+    color: #495057;
+    background-color: #fafafa;
+    background-clip: padding-box;
+    border: 1px solid #fafafa;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    &.LoginForm--invalid~.LoginForm--invalidFeedback {
+      display: block;
+    }
+  }
+
+  &__button {
+    background-color: #000000;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 14px;
+    padding: 14px 0;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  &--invalid {
+    border-color: #dc3545;
+  }
+
+  &--invalidFeedback {
+    display: none;
+    width: 100%;
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #dc3545;
+  }
+}
+
+// .custom-select.is-invalid~.invalid-feedback,
+// .custom-select.is-invalid~.invalid-tooltip,
+// .form-control.is-invalid~.invalid-feedback,
+// .form-control.is-invalid~.invalid-tooltip,
+// .was-validated .custom-select:invalid~.invalid-feedback,
+// .was-validated .custom-select:invalid~.invalid-tooltip,
+// .was-validated .form-control:invalid~.invalid-feedback,
+// .was-validated .form-control:invalid~.invalid-tooltip {}
