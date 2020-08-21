@@ -23,7 +23,6 @@
   height: 100vh;
   background: #f0f1f6;
 
-
   &__box {
     position: absolute;
     top: 50%;
@@ -52,21 +51,23 @@
     width: 100%;
     padding: 14px 16px;
     font-size: 1.2rem;
+    box-sizing: border-box;
     line-height: 1.5;
     height: 50px;
     color: #495057;
     background-color: #fafafa;
     background-clip: padding-box;
     border: 1px solid #fafafa;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-    &.LoginForm--invalid~.LoginForm--invalidFeedback {
+    &.LoginForm--invalid ~ .LoginForm--invalidFeedback {
       display: block;
     }
   }
 
   &__button {
+    font-family: "ThaiSansNeue", sans-serif;
     background-color: #000000;
     border-radius: 10px;
     border: none;
@@ -91,12 +92,3 @@
     color: #dc3545;
   }
 }
-
-// .custom-select.is-invalid~.invalid-feedback,
-// .custom-select.is-invalid~.invalid-tooltip,
-// .form-control.is-invalid~.invalid-feedback,
-// .form-control.is-invalid~.invalid-tooltip,
-// .was-validated .custom-select:invalid~.invalid-feedback,
-// .was-validated .custom-select:invalid~.invalid-tooltip,
-// .was-validated .form-control:invalid~.invalid-feedback,
-// .was-validated .form-control:invalid~.invalid-tooltip {}
